@@ -1,0 +1,4 @@
+SP,http://bayonet.ddo.jp/sp/index.txt
+TP,http://temp.orz.hm/yp/index.txt
+Turf-YP,http://peercast.takami98.net/turf-page/index.txt
+WP,http://wp-site.appspot.com/index.txt
