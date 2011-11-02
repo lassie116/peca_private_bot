@@ -13,7 +13,7 @@ LogFile = './log'
 
 class PeCaPB
   def initialize
-    config = Pit.get("lassie_bot",:requere=>{
+    config = Pit.get("peca_pb",:requere=>{
                        "ckey" => "Consumer key",
                        "csecret" => "Consumer secret",
                        "token" => "OAuth token",
