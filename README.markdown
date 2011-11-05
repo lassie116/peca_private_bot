@@ -19,7 +19,7 @@ peercast本体の機能はないので、peercastが動作しているマシン�
 
 経緯など
 --------
-starryskylogicさんのPecaShogi_bot(https://github.com/starryskylogic/PecaShogi_bot)を見て、便利そうだったので機能をまるパクりしました。ありがとうございます。
+starryskylogicさんのPecaShogi_bot( https://github.com/starryskylogic/PecaShogi_bot )を見て、便利そうだったので機能をまるパクりしました。ありがとうございます。
 
 おといあわせ
 ------------
