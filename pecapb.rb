@@ -57,7 +57,7 @@ class PeCaPB
 
   def get_ch_info(name,url)
     index_txt = open(url).read
-    @log.info("loading #{name}")
+    @log.info("load #{name} index")
     ret = {}
     index_txt.split("\n").each do |line|
       l = line.split("<>").map {|e| e.chomp}
@@ -118,7 +118,7 @@ class PeCaPB
     end_ch = @now_playing - fav_ch.keys
 
     start_list = start_ch.map {|name| info_to_s(fav_ch[name])}
-    end_list = end_ch.map {|name| "#{name}が終了/詳細を変更しました" }
+    end_list = end_ch.map {|name| "#{name}が詳細を変更したか配信終了しました"}
     @now_playing = fav_ch.keys
 
     open(NowPlaying,"w") do |f|
