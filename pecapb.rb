@@ -56,12 +56,17 @@ class PeCaPB
   end
 
   def get_ch_info(name,url)
-    index_txt = open(url).read
-    @log.info("load #{name} index")
     ret = {}
-    index_txt.split("\n").each do |line|
-      l = line.split("<>").map {|e| e.chomp}
-      ret[l.first] = l
+    begin
+      index_txt = open(url).read
+      @log.info("load #{name} index")
+    
+      index_txt.split("\n").each do |line|
+        l = line.split("<>").map {|e| e.chomp}
+        ret[l.first] = l
+      end
+    rescue OpenURI::HTTPError
+      @log.error("HTTPError #{url}")
     end
     ret
   end
